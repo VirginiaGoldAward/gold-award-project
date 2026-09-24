@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
 :root {
   --ink: #30212b;
   --ink-soft: #604553;
@@ -28,7 +30,8 @@ h2,
 h3,
 .project-tag,
 .main-nav a {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", "Segoe UI", sans-serif;
+  font-family: "Patrick Hand", "Segoe UI", sans-serif;
+  font-weight: 400;
   letter-spacing: 0.02em;
 }
 
@@ -76,7 +79,7 @@ h3 {
   margin: 0;
   font-size: 0.95rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .main-nav {
@@ -91,7 +94,8 @@ h3 {
   padding: 0.45rem 0.8rem;
   border: 1px solid rgba(48, 33, 43, 0.35);
   border-radius: 999px;
-  font-weight: 700;
+  font-weight: 400;
+  font-size: 1.15rem;
 }
 
 .main-nav a:hover,
