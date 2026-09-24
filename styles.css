@@ -1,13 +1,12 @@
 :root {
-  --ink: #142330;
-  --ink-soft: #334856;
-  --paper: #f7f6f1;
+  --ink: #30212b;
+  --ink-soft: #604553;
+  --paper: #fff7fb;
   --panel: #ffffff;
-  --accent: #b75a1a;
-  --accent-soft: #e8b78f;
-  --line: #d8d9d2;
-  --success: #2b7a5a;
-  --shadow: 0 12px 30px rgba(20, 35, 48, 0.1);
+  --accent: #ff66c4;
+  --accent-soft: #ff914d;
+  --line: #efd1df;
+  --shadow: 0 12px 30px rgba(48, 33, 43, 0.1);
 }
 
 * {
@@ -17,8 +16,8 @@
 body {
   margin: 0;
   color: var(--ink);
-  background: radial-gradient(circle at 20% -15%, #fff6e8 0%, transparent 35%),
-    radial-gradient(circle at 90% 10%, #e9f4ff 0%, transparent 30%),
+  background: radial-gradient(circle at 20% -15%, #ffe1f3 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #ffe6d6 0%, transparent 30%),
     var(--paper);
   font-family: "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
   line-height: 1.6;
@@ -60,7 +59,7 @@ h3 {
 }
 
 .site-header {
-  color: #fff;
+  color: var(--ink);
 }
 
 .topbar {
@@ -70,7 +69,7 @@ h3 {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 1rem 4vw;
-  background: var(--ink);
+  background: var(--accent);
 }
 
 .project-tag {
@@ -87,10 +86,10 @@ h3 {
 }
 
 .main-nav a {
-  color: #fff;
+  color: var(--ink);
   text-decoration: none;
   padding: 0.45rem 0.8rem;
-  border: 1px solid rgba(255, 255, 255, 0.28);
+  border: 1px solid rgba(48, 33, 43, 0.35);
   border-radius: 999px;
   font-weight: 700;
 }
@@ -98,7 +97,7 @@ h3 {
 .main-nav a:hover,
 .main-nav a:focus-visible,
 .main-nav a.active {
-  background: #fff;
+  background: var(--accent-soft);
   color: var(--ink);
 }
 
@@ -107,14 +106,14 @@ h3 {
   display: grid;
   align-items: center;
   padding: 4rem 4vw;
-  background-image: var(--hero-image);
+  background-image: linear-gradient(120deg, var(--accent), var(--accent-soft));
   background-size: cover;
   background-position: center;
 }
 
 .hero-inner {
   width: min(850px, 100%);
-  background: rgba(20, 35, 48, 0.45);
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 16px;
   box-shadow: var(--shadow);
@@ -156,12 +155,12 @@ h1 {
 
 .btn-solid {
   background: var(--accent);
-  color: #fff;
+  color: var(--ink);
 }
 
 .btn-outline {
-  border-color: #fff;
-  color: #fff;
+  border-color: var(--accent-soft);
+  color: var(--ink);
 }
 
 .btn:hover,
@@ -243,6 +242,20 @@ h1 {
   padding: 0.4rem 0.7rem;
   font-weight: 700;
   background: #fff;
+}
+
+.section-nav a:hover,
+.section-nav a:focus-visible {
+  background: var(--accent-soft);
+}
+
+.panel a:not([class]) {
+  color: #942263;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
 }
 
 .facts {
