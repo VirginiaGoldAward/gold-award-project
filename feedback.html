@@ -26,52 +26,7 @@
       <h1>Feedback and Reach Evidence</h1>
       <p>Use this page to collect ratings and comments from visitors. This helps demonstrate measurable outreach and community response.</p>
     </section>
-
-    <section class="grid-two">
-      <article class="panel">
-        <h2>Rate This Project</h2>
-        <form id="feedback-form" class="feedback-form">
-          <label for="name">Name (optional)</label>
-          <input id="name" name="name" type="text" maxlength="60" />
-
-          <label for="role">Role</label>
-          <select id="role" name="role" required>
-            <option value="">Choose one</option>
-            <option>Student</option>
-            <option>Educator</option>
-            <option>Parent</option>
-            <option>Community Member</option>
-          </select>
-
-          <label for="rating">Rating (1-5)</label>
-          <input id="rating" name="rating" type="number" min="1" max="5" required />
-
-          <label for="comment">Comment</label>
-          <textarea id="comment" name="comment" rows="5" maxlength="500" required></textarea>
-
-          <button class="btn btn-solid" type="submit">Submit Feedback</button>
-        </form>
-        <p class="note">Demo mode: this stores responses in this browser only. For official collection, connect a form service in production.</p>
-      </article>
-
-      <aside class="panel panel-accent">
-        <h2>Impact Snapshot</h2>
-        <div class="metric"><span>Total Responses</span><strong id="total-responses">0</strong></div>
-        <div class="metric"><span>Average Rating</span><strong id="avg-rating">0.0</strong></div>
-        <div class="metric"><span>Recommendation Score</span><strong id="recommendation-score">0%</strong></div>
-        <p>Use this summary in your measurable impact documentation.</p>
-      </aside>
-    </section>
-
-    <section class="panel">
-      <h2>Recent Responses</h2>
-      <div id="feedback-list" class="feedback-list" aria-live="polite"></div>
-    </section>
   </main>
-
-  <footer class="site-footer">
-    <p>Replace demo storage with a live form backend before final public use.</p>
-  </footer>
 
   <script src="script.js"></script>
 </body>
